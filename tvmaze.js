@@ -86,7 +86,7 @@ $searchForm.on("submit", async function (evt) {
 
 async function getEpisodesOfShow(id) {
   const res = await axios.get(
-    "http://api.tvmaze.com/search/shows/${id}/episodes"
+    "https://api.tvmaze.com/search/shows/${id}/episodes"
   );
   return res.data.map((res) => ({
     id: res.id,
